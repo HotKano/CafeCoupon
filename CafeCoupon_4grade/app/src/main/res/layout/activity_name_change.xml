@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#caece4"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/zone1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#3ba990"
+        android:padding="10dp">
+
+        <ImageButton
+            android:id="@+id/backbutton"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:background="@android:color/transparent"
+            android:clickable="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/backbutton" />
+
+        <ImageView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:src="@drawable/couponlogo" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/zone2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/zone1"
+        android:background="#3ba990"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/titleText2"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/info_main" />
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/zone3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:text="닉네임을 입력해주세요." />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="300dp"
+            android:layout_height="32dp"
+            android:layout_below="@+id/text1"
+            android:background="@drawable/loginplate"
+            android:inputType="text|textCapCharacters"
+            android:maxLength="7"
+            android:scaleType="fitCenter" />
+
+        <TextView
+            android:id="@+id/textlength"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/name"
+            android:layout_below="@+id/name"
+            android:layout_marginTop="10dp"
+            android:text="0/7" />
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/zone3"
+        android:layout_centerHorizontal="true"
+        android:background="#39c2a1"
+        android:text="저장"
+        android:textColor="#ffffffff"
+        android:textSize="15dp" />
+
+</RelativeLayout>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/zone1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#3ba990"
+        android:padding="10dp">
+
+        <ImageButton
+            android:id="@+id/backbutton"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:background="@android:color/transparent"
+            android:clickable="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/backbutton" />
+
+        <ImageView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:src="@drawable/couponlogo" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/zone2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/zone1"
+        android:background="#3ba990"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/titleText2"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/policy_main" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/zone2"
+        android:layout_marginBottom="10dp"
+        android:text="[이용약관 및 정책]"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/text1"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1. 개인정보의 처리 목적 (‘CafeCoupon’이하 ‘카페쿠폰’) 은(는) 다음의 목적을 위하여 개인정보를 처리하고 있으며, 다음의 목적 이외의 용도로는 이용하지 않습니다.\n
+- 고객 가입의사 확인, 고객에 대한 서비스 제공에 따른 본인 식별.인증, 회원자격 유지.관리, 물품 또는 서비스 공급에 따른 금액 결제, 물품 또는 서비스의 공급.배송 등\n
+\n
+2. 개인정보처리 위탁
+
+ 1 ('카페쿠폰')은(는) 원활한 개인정보 업무처리를 위하여 다음과 같이 개인정보 처리업무를 위탁하고 있습니다.\n
+\n
+ 2 ('CafeCoupon'이하 '카페쿠폰')은(는) 위탁계약 체결시 개인정보 보호법 제25조에 따라 위탁업무 수행목적 외 개인정보 처리금지, 기술적․관리적 보호조치, 재위탁 제한, 수탁자에 대한 관리․감독, 손해배상 등 책임에 관한 사항을 계약서 등 문서에 명시하고, 수탁자가 개인정보를 안전하게 처리하는지를 감독하고 있습니다.\n
+
+ 3 위탁업무의 내용이나 수탁자가 변경될 경우에는 지체없이 본 개인정보 처리방침을 통하여 공개하도록 하겠습니다.\n
+\n
+
+3. 정보주체의 권리,의무 및 그 행사방법 이용자는 개인정보주체로서 다음과 같은 권리를 행사할 수 있습니다.\n
+
+ 1 정보주체는 기관/회사명 (‘사이트URL’이하 ‘사이트명) 에 대해 언제든지 다음 각 호의 개인정보 보호 관련 권리를 행사할 수 있습니다.\n
+1. 개인정보 열람요구\n
+2. 오류 등이 있을 경우 정정 요구\n
+3. 삭제요구\n
+4. 처리정지 요구\n
+
+
+
+4. 처리하는 개인정보의 항목 작성 \n
+\n
+ 1 ('CafeCoupon'이하 '카페쿠폰')은(는) 다음의 개인정보 항목을 처리하고 있습니다.\n
+\n
+1 카페이용에 필요한 항목\n
+- 필수항목 : 로그인ID, 이름, 서비스 이용 기록\n
+- 선택항목 : 위치 및 GPS 기능 활성화\n
+
+
+
+\n
+5. 개인정보의 파기('카페쿠폰')은(는) 원칙적으로 개인정보 처리목적이 달성된 경우에는 지체없이 해당 개인정보를 파기합니다. 파기의 절차, 기한 및 방법은 다음과 같습니다.\n
+
+-파기절차이용자가 입력한 정보는 목적 달성 후 별도의 DB에 옮겨져(종이의 경우 별도의 서류) 내부 방침 및 기타 관련 법령에 따라 일정기간 저장된 후 혹은 즉시 파기됩니다. 이 때, DB로 옮겨진 개인정보는 법률에 의한 경우가 아니고서는 다른 목적으로 이용되지 않습니다.-파기기한이용자의 개인정보는 개인정보의 보유기간이 경과된 경우에는 보유기간의 종료일로부터 5일 이내에, 개인정보의 처리 목적 달성, 해당 서비스의 폐지, 사업의 종료 등 그 개인정보가 불필요하게 되었을 때에는 개인정보의 처리가 불필요한 것으로 인정되는 날로부터 5일 이내에 그 개인정보를 파기합니다.\n
+
+\n
+
+6. 개인정보의 안전성 확보 조치 ('카페쿠폰')은(는) 개인정보보호법 제29조에 따라 다음과 같이 안전성 확보에 필요한 기술적/관리적 및 물리적 조치를 하고 있습니다.\n
+\n
+1. 정기적인 자체 감사 실시\n
+개인정보 취급 관련 안정성 확보를 위해 정기적(분기 1회)으로 자체 감사를 실시하고 있습니다.\n
+\n
+2. 해킹 등에 대비한 기술적 대책\n
+cafecoupon('카페쿠폰')은 해킹이나 컴퓨터 바이러스 등에 의한 개인정보 유출 및 훼손을 막기 위하여 보안프로그램을 설치하고 주기적인 갱신·점검을 하며 외부로부터 접근이 통제된 구역에 시스템을 설치하고 기술적/물리적으로 감시 및 차단하고 있습니다.\n
+\n
+3. 문서보안을 위한 잠금장치 사용\n
+개인정보가 포함된 서류, 보조저장매체 등을 잠금장치가 있는 안전한 장소에 보관하고 있습니다.\n
+\n
+4. 비인가자에 대한 출입 통제\n
+개인정보를 보관하고 있는 물리적 보관 장소를 별도로 두고 이에 대해 출입통제 절차를 수립, 운영하고 있습니다.\n
+\n
+
+
+
+7. 개인정보 보호책임자 작성\n
+\n
+
+ 1 cafecoupon(‘CafeCoupon’이하 ‘카페쿠폰) 은(는) 개인정보 처리에 관한 업무를 총괄해서 책임지고, 개인정보 처리와 관련한 정보주체의 불만처리 및 피해구제 등을 위하여 아래와 같이 개인정보 보호책임자를 지정하고 있습니다.\n
+
+개인정보 보호책임자 \n
+성명 :김종우\n
+직책 :개발자\n
+직급 :개발자\n
+연락처 :010-4100-7243, dpsw23@naver.com, \n
+ 개인정보 보호 담당부서로 연결됩니다.\n\n
+
+개인정보 보호 담당부서\n
+부서명 :카페쿠폰\n
+담당자 :개발자\n
+연락처 :010-4100-7243, dpsw23@naver.com, \n
+ 2 정보주체께서는 cafecoupon(‘CafeCoupon’이하 ‘카페쿠폰) 의 서비스(또는 사업)을 이용하시면서 발생한 모든 개인정보 보호 관련 문의, 불만처리, 피해구제 등에 관한 사항을 개인정보 보호책임자 및 담당부서로 문의하실 수 있습니다. cafecoupon(‘CafeCoupon’이하 ‘카페쿠폰) 은(는) 정보주체의 문의에 대해 지체 없이 답변 및 처리해드릴 것입니다.\n
+
+\n
+
+8. 개인정보 열람청구  1 정보주체는 개인정보 보호법 제35조에 따른 개인정보의 열람 청구를 아래의 부서에 할 수 있습니다. (‘CafeCoupon'이하 '카페쿠폰')은(는) 정보주체의 개인정보 열람청구가 신속하게 처리되도록 노력하겠습니다.\n
+\n
+개인정보 열람청구 접수·처리 부서 \n
+부서명 : 카페쿠폰\n
+담당자 : 김종우\n
+연락처 : 010-4100-7243, dpsw23@naver.com,\n
+
+\n
+ 2 정보주체께서는 제1항의 열람청구 접수․처리부서 이외에, 행정안전부의 ‘개인정보보호 종합지원 포털’ 웹사이트(www.privacy.go.kr)를 통하여서도 개인정보 열람청구를 하실 수 있습니다.\n
+\n
+행정안전부 개인정보보호 종합지원 포털 → 개인정보 민원 → 개인정보 열람등 요구 (본인확인을 위하여 아이핀(I-PIN)이 있어야 함)\n
+
+\n
+
+9. 개인정보 처리방침 변경\n
+
+ 1이 개인정보처리방침은 시행일로부터 적용되며, 법령 및 방침에 따른 변경내용의 추가, 삭제 및 정정이 있는 경우에는 변경사항의 시행 7일 전부터 공지사항을 통하여 고지할 것입니다." />
+
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scroll"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="30dp"
+        android:background="#39c2a1"
+        android:text="확인"
+        android:textColor="#ffffffff"
+        android:textSize="20dp" />
+
+</LinearLayout>

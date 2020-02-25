@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.cafe">
+
+
+    <permission
+        android:name="com.example.cafe.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/onlylogo"
+        android:label="@string/app_name"
+        android:usesCleartextTraffic="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.example.drkim.cafecoupon.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepath" />
+        </provider>
+
+        <service android:name=".MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <service android:name=".MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAMeeQJkDLZ9IIo8HdczpHsWPMXA3SM82s" />
+
+        <activity android:name=".LogoActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".MainActivity"></activity>
+
+        <activity android:name=".MapsActivity"></activity>
+
+        <activity android:name=".RegisterActivity"></activity>
+
+        <activity android:name=".UpdateSubitoCoupon">
+            <intent-filter>
+                <action android:name="android.nfc.action.NDEF_DISCOVERED" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="application/com.example.drkim.cafecoupon" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".UseSubitoCoupon">
+            <intent-filter>
+                <action android:name="android.nfc.action.NDEF_DISCOVERED" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="application/com.example.drkim.cafecoupon2" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".CafeInfoActivity"></activity>
+
+        <activity android:name=".ActivityCouponInfo"></activity>
+
+        <activity
+            android:name=".CouponMemo"
+            android:windowSoftInputMode="adjustResize"></activity>
+
+        <activity android:name=".CafeLocationMap"></activity>
+
+        <activity android:name=".ReviewActivity"></activity>
+
+        <activity
+            android:name=".ReviewWrite"
+            android:windowSoftInputMode="adjustResize"></activity>
+
+        <activity android:name=".Policy_activity"></activity>
+
+        <activity android:name=".Member_quit_activity"></activity>
+
+        <activity android:name=".MemberImg"></activity>
+
+        <activity android:name=".CustomerCenter"></activity>
+
+        <activity android:name=".MemberName"></activity>
+
+        <activity android:name=".UpdateCoffeeyaCoupon">
+            <intent-filter>
+                <action android:name="android.nfc.action.NDEF_DISCOVERED" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="application/com.example.drkim.cafecoupon3" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".UseCoffeeyaCoupon">
+            <intent-filter>
+                <action android:name="android.nfc.action.NDEF_DISCOVERED" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="application/com.example.drkim.cafecoupon4" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".UpdateStarCoupon">
+            <intent-filter>
+                <action android:name="android.nfc.action.NDEF_DISCOVERED" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="application/com.example.drkim.cafecoupon5" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".UseStarCoupon">
+            <intent-filter>
+                <action android:name="android.nfc.action.NDEF_DISCOVERED" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="application/com.example.drkim.cafecoupon6" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".UpdateSosoCoupon">
+            <intent-filter>
+                <action android:name="android.nfc.action.NDEF_DISCOVERED" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="application/com.example.drkim.cafecoupon7" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".UseSosoCoupon">
+            <intent-filter>
+                <action android:name="android.nfc.action.NDEF_DISCOVERED" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="application/com.example.drkim.cafecoupon8" />
+            </intent-filter>
+        </activity>
+
+
+    </application>
+
+</manifest>

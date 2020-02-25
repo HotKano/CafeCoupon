@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1057162491768",
+    "firebase_url": "https://cafecoupon-741b8.firebaseio.com",
+    "project_id": "cafecoupon-741b8",
+    "storage_bucket": "cafecoupon-741b8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1057162491768:android:c9f8d94b9cf95c70",
+        "android_client_info": {
+          "package_name": "com.example.drkim.cafecoupon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1057162491768-m94bcohe1dcsiiphu180hl2b4pm9gsom.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJSjl9sdT4C3glPV15COHBFTA5qFtHwi8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
